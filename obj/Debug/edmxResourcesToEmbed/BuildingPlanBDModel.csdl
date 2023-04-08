@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BuildingPlanBDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BuildingObject">
+    <Key>
+      <PropertyRef Name="BuildingObjectName" />
+      <PropertyRef Name="RegionId" />
+      <PropertyRef Name="SectorId" />
+      <PropertyRef Name="OrganizationId" />
+    </Key>
+    <Property Name="BuildingObjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RegionId" Type="Int32" Nullable="false" />
+    <Property Name="SectorId" Type="Int32" Nullable="false" />
+    <Property Name="OrganizationId" Type="Int32" Nullable="false" />
+    <Property Name="FinanceOfFirstQuart" Type="Int32" Nullable="false" />
+    <Property Name="FinanceOfSecondQuart" Type="Int32" Nullable="false" />
+    <Property Name="FinanceOfThirdQuart" Type="Int32" Nullable="false" />
+    <Property Name="FinanceOfFourthQuart" Type="Int32" Nullable="false" />
+    <Property Name="EnterYear" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="BuildingOrganization" Relationship="Self.FK_BuildingObject_BuildingOrganization" FromRole="BuildingObject" ToRole="BuildingOrganization" />
+    <NavigationProperty Name="Region" Relationship="Self.FK_BuildingObject_Regions" FromRole="BuildingObject" ToRole="Regions" />
+    <NavigationProperty Name="Sector" Relationship="Self.FK_BuildingObject_Sectors" FromRole="BuildingObject" ToRole="Sectors" />
+  </EntityType>
+  <EntityType Name="BuildingOrganization">
+    <Key>
+      <PropertyRef Name="OrganizationId" />
+    </Key>
+    <Property Name="OrganizationId" Type="Int32" Nullable="false" />
+    <Property Name="OrganizationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="BuildingObjects" Relationship="Self.FK_BuildingObject_BuildingOrganization" FromRole="BuildingOrganization" ToRole="BuildingObject" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Name="RegionId" Type="Int32" Nullable="false" />
+    <Property Name="RegionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="BuildingObjects" Relationship="Self.FK_BuildingObject_Regions" FromRole="Regions" ToRole="BuildingObject" />
+  </EntityType>
+  <EntityType Name="Sector">
+    <Key>
+      <PropertyRef Name="SectorId" />
+    </Key>
+    <Property Name="SectorId" Type="Int32" Nullable="false" />
+    <Property Name="SectorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="BuildingObjects" Relationship="Self.FK_BuildingObject_Sectors" FromRole="Sectors" ToRole="BuildingObject" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_BuildingObject_BuildingOrganization">
+    <End Role="BuildingOrganization" Type="Self.BuildingOrganization" Multiplicity="1" />
+    <End Role="BuildingObject" Type="Self.BuildingObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BuildingOrganization">
+        <PropertyRef Name="OrganizationId" />
+      </Principal>
+      <Dependent Role="BuildingObject">
+        <PropertyRef Name="OrganizationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BuildingObject_Regions">
+    <End Role="Regions" Type="Self.Region" Multiplicity="1" />
+    <End Role="BuildingObject" Type="Self.BuildingObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="RegionId" />
+      </Principal>
+      <Dependent Role="BuildingObject">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BuildingObject_Sectors">
+    <End Role="Sectors" Type="Self.Sector" Multiplicity="1" />
+    <End Role="BuildingObject" Type="Self.BuildingObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sectors">
+        <PropertyRef Name="SectorId" />
+      </Principal>
+      <Dependent Role="BuildingObject">
+        <PropertyRef Name="SectorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BuildingObjects" EntityType="Self.BuildingObject" />
+    <EntitySet Name="BuildingOrganizations" EntityType="Self.BuildingOrganization" />
+    <EntitySet Name="Regions" EntityType="Self.Region" />
+    <EntitySet Name="Sectors" EntityType="Self.Sector" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_BuildingObject_BuildingOrganization" Association="Self.FK_BuildingObject_BuildingOrganization">
+      <End Role="BuildingOrganization" EntitySet="BuildingOrganizations" />
+      <End Role="BuildingObject" EntitySet="BuildingObjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BuildingObject_Regions" Association="Self.FK_BuildingObject_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="BuildingObject" EntitySet="BuildingObjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BuildingObject_Sectors" Association="Self.FK_BuildingObject_Sectors">
+      <End Role="Sectors" EntitySet="Sectors" />
+      <End Role="BuildingObject" EntitySet="BuildingObjects" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BuildingPlanBDModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(BuildingPlanBDModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

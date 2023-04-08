@@ -1,0 +1,122 @@
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.AssemblyReference.cache
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.SuggestedBindingRedirects.cache
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgAR.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\MainWindow.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\RegionER.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\RegionIdAR.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\SectorER.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\SectorIdAR.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\App.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_Content.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_MarkupCompile.cache
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_MarkupCompile.lref
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.exe
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.pdb
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.exe.config
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.exe
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.pdb
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.dll
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.xml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\MainWindow.baml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\RegionER.baml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\RegionIdAR.baml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\SectorIdAR.baml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgAR.baml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\SectorER.baml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.g.resources
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.Properties.Resources.resources
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.GenerateResource.cache
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.CoreCompileInputs.cache
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.CopyComplete
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingObj.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgER.g.cs
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingObj.baml
+C:\Users\исп-31\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgER.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.exe.config
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.exe
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.pdb
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.dll
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.xml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.AssemblyReference.cache
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.SuggestedBindingRedirects.cache
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingObj.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingObjER.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgAR.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgER.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\MainWindow.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\RegionER.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\RegionIdAR.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\SectorER.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\SectorIdAR.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\App.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_Content.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_MarkupCompile.cache
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_MarkupCompile.lref
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingObj.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingObjER.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgAR.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\BuildingOrgER.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\MainWindow.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\RegionER.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\RegionIdAR.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\SectorER.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\SectorIdAR.baml
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.g.resources
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.Properties.Resources.resources
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.GenerateResource.cache
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.CoreCompileInputs.cache
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.CopyComplete
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.exe
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.pdb
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\Querries.g.cs
+C:\Users\исп-31.RSSK\Desktop\KapustinRPMBDPR2\obj\Debug\Querries.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.exe.config
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.exe
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\KapustinRPMBDPR2.pdb
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\EntityFramework.dll
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\EntityFramework.SqlServer.dll
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\EntityFramework.xml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\EntityFramework.SqlServer.xml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\ru\EntityFramework.resources.dll
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.AssemblyReference.cache
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.SuggestedBindingRedirects.cache
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingObj.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingObjER.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingOrgAR.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingOrgER.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\MainWindow.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\Querries.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\RegionER.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\RegionIdAR.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\SectorER.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\SectorIdAR.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\App.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_Content.g.cs
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_MarkupCompile.cache
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2_MarkupCompile.lref
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingObj.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingObjER.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingOrgAR.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\BuildingOrgER.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\MainWindow.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\Querries.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\RegionER.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\RegionIdAR.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\SectorER.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\SectorIdAR.baml
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.g.resources
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.Properties.Resources.resources
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.GenerateResource.cache
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.CoreCompileInputs.cache
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.csproj.CopyComplete
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.exe
+E:\Не МДК 01.02\Учёба\РПМ\Работы\KapustinRPMBDPR2\obj\Debug\KapustinRPMBDPR2.pdb
