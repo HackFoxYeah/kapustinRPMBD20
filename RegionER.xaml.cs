@@ -30,11 +30,23 @@ namespace KapustinRPMBDPR2
                 Close();
                 return;
             }
-            _objectRegionId.RegionId = Math.Abs(regionId);
-            _objectRegionId.RegionName = RegionNameTB.Text;
-            MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");
-            _dataBase.SaveChanges();
-            Close();
+            try
+            {
+                _dataBase.Regions.Remove(_objectRegionId);
+                _dataBase.SaveChanges();
+                _objectRegionId.RegionId = Math.Abs(regionId);
+                _objectRegionId.RegionName = RegionNameTB.Text;
+                _dataBase.Regions.Add(_objectRegionId);
+                MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");
+                _dataBase.SaveChanges();
+                Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Попытка удалить связанные записи! Сначала уберите зависимости!", "Конфликт связей");
+                _dataBase.Regions.Add(_objectRegionId);
+                Close();
+            }
         }
         private void CancelBTN_Click(object sender, RoutedEventArgs e)
         {

@@ -7,11 +7,10 @@
         mc:Ignorable="d"
         Title="Querries" Height="200" Width="450">
     <Grid>
-        <Label Content="Первый запрос" Height="50" Width="100" Margin="0,0,200,0"/>
-        <Label Content="Второй запрос" Height="50" Width="100" Margin="200,0,0,0"/>
-        <Button x:Name="FirstQuerryBTN" Content="Первый" Height="20" Width="65" Margin="0,20,210,0" Click="FirstQuerryBTN_Click" ></Button>
-        <Button x:Name="SecondQuerryBTN" Content="Второй" Height="20" Width="65" Margin="190,20,0,0" Click="SecondQuerryBTN_Click" ></Button>
-        <TextBox x:Name="FirstTB" IsReadOnly="true" Height="50" Width="100" Margin="0,100,210,0"></TextBox>
-        <TextBox x:Name="SecondTB" IsReadOnly="true" Height="50" Width="100" Margin="190,100,0,0"></TextBox>
+        <Label Content="Первый запрос" Height="50" Width="100" Margin="0,120,220,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Второй запрос" Height="50" Width="100" Margin="260,125,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="FirstQuerryBTN" Content="Первый" Height="20" Width="65" Margin="0,140,220,0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="FirstQuerryBTN_Click" ></Button>
+        <Button x:Name="SecondQuerryBTN" Content="Второй" Height="20" Width="65" Margin="260,140,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="SecondQuerryBTN_Click" ></Button>
+        <DataGrid x:Name="Dg" Margin="0,0,0,60"/>
     </Grid>
 </Window>

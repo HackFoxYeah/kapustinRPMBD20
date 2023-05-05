@@ -60,7 +60,6 @@ namespace KapustinRPMBDPR2
                 Region row = (Region)RegionIdDG.Items[indexRow];
                 DataBaseSupClass.RegionId = row.RegionId;
                 DataBaseSupClass.RegionName = row.RegionName;
-
                 RegionER erForm = new RegionER();
                 erForm.ShowDialog();
                 RegionIdDG.Items.Refresh();
@@ -75,7 +74,6 @@ namespace KapustinRPMBDPR2
                 Sector row = (Sector)SectorIdDG.Items[indexRow];
                 DataBaseSupClass.SectorId = row.SectorId;
                 DataBaseSupClass.SectorName = row.SectorName;
-
                 SectorER erForm = new SectorER();
                 erForm.ShowDialog();
                 SectorIdDG.Items.Refresh();
@@ -92,9 +90,8 @@ namespace KapustinRPMBDPR2
                 DataBaseSupClass.OrganizationName = row.OrganizationName;
                 DataBaseSupClass.Address = row.Address;
                 DataBaseSupClass.PhoneNumber = row.PhoneNumber;
-
-                SectorER erForm = new SectorER();
-                erForm.ShowDialog();
+                BuildingOrgER buildingOrgER = new BuildingOrgER();
+                buildingOrgER.ShowDialog();
                 BuildingOrganizationDG.Items.Refresh();
                 BuildingOrganizationDG.Focus();
             }
@@ -123,9 +120,7 @@ namespace KapustinRPMBDPR2
         private void RegionIdRemoveRec_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result;
-
             result = MessageBox.Show("Удалить запись?", "Удаление записи", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
             if (result == MessageBoxResult.Yes)
             {
                 try
@@ -143,9 +138,7 @@ namespace KapustinRPMBDPR2
         private void SectorIdRemoveRec_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result;
-
             result = MessageBox.Show("Удалить запись?", "Удаление записи", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
             if (result == MessageBoxResult.Yes)
             {
                 try
@@ -163,9 +156,7 @@ namespace KapustinRPMBDPR2
         private void BuildingOrganizationRemoveRec_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result;
-
             result = MessageBox.Show("Удалить запись?", "Удаление записи", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
             if (result == MessageBoxResult.Yes)
             {
                 try
@@ -183,9 +174,7 @@ namespace KapustinRPMBDPR2
         private void BuildingObjectRemoveRec_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result;
-
             result = MessageBox.Show("Удалить запись?", "Удаление записи", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
             if (result == MessageBoxResult.Yes)
             {
                 try
@@ -200,7 +189,6 @@ namespace KapustinRPMBDPR2
                 }
             }
         }
-
         private void Querries_Click(object sender, RoutedEventArgs e)
         {
             Querries wind = new Querries();

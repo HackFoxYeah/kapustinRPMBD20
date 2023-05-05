@@ -53,26 +53,37 @@ namespace KapustinRPMBDPR2
                     Close();
                     return;
                 }
-                _objectBuildingObjDB.BuildingObjectName = BuildingObjectNameTB.Text;
-                _objectBuildingObjDB.RegionId = regionId;
-                _objectBuildingObjDB.SectorId = sectorId;
-                _objectBuildingObjDB.OrganizationId = orgId;
-                _objectBuildingObjDB.FinanceOfFirstQuart = finFirstId;
-                _objectBuildingObjDB.FinanceOfSecondQuart = finSecondId;
-                _objectBuildingObjDB.FinanceOfThirdQuart = finThirdId;
-                _objectBuildingObjDB.FinanceOfFourthQuart = finFouthId;
-                _objectBuildingObjDB.EnterYear = Convert.ToDateTime(string.Concat(EnterYearTB.Text, ".01.01"));                
+                try
+                {
+                    _dataBase.BuildingObjects.Remove(_objectBuildingObjDB);
+                    _dataBase.SaveChanges();
+                    _objectBuildingObjDB.BuildingObjectName = BuildingObjectNameTB.Text;
+                    _objectBuildingObjDB.RegionId = regionId;
+                    _objectBuildingObjDB.SectorId = sectorId;
+                    _objectBuildingObjDB.OrganizationId = orgId;
+                    _objectBuildingObjDB.FinanceOfFirstQuart = finFirstId;
+                    _objectBuildingObjDB.FinanceOfSecondQuart = finSecondId;
+                    _objectBuildingObjDB.FinanceOfThirdQuart = finThirdId;
+                    _objectBuildingObjDB.FinanceOfFourthQuart = finFouthId;
+                    _objectBuildingObjDB.EnterYear = Convert.ToDateTime(string.Concat(EnterYearTB.Text, ".01.01"));
+                    _dataBase.BuildingObjects.Add(_objectBuildingObjDB);
+                    MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");
+                    _dataBase.SaveChanges();
+                    Close();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Попытка удалить связанные записи! Сначала уберите зависимости!", "Конфликт связей");
+                    _dataBase.BuildingObjects.Add(_objectBuildingObjDB);
+                    Close();
+                }                           
             }
             catch (Exception)
             {
                 MessageBox.Show("Возможно, вводимые вами данные не содержатся в других соответствующих таблицах.\nПерепроверьте данные и попробуйте снова.", "Внимание!", MessageBoxButton.OK, MessageBoxImage.Error);
                 Close();
-            }
-            MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");           
-            _dataBase.SaveChanges();
-            Close();
+            }            
         }
-
         private void CancelBTN_Click(object sender, RoutedEventArgs e)
         {
             Close();

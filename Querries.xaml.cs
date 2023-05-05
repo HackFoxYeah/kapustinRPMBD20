@@ -1,29 +1,28 @@
 ﻿using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace KapustinRPMBDPR2
-{    
+{
     public partial class Querries : Window
     {
         public Querries()
         {
             InitializeComponent();
         }
-        Entities _dataBase = new Entities();
+        Entities _dataBase = Entities.GetContext();
         private void FirstQuerryBTN_Click(object sender, RoutedEventArgs e)
         {
-            var firstSqlResults = from reg in _dataBase.Regions
+            /*var firstSqlResults = from reg in _dataBase.Regions
                                   join bo in _dataBase.BuildingObjects
                                   on reg.RegionId equals bo.RegionId
+                                  group reg by reg.RegionName into result
                                   select new
-                                  {
-                                      reg.RegionName,
-                                      count = bo.BuildingObjectName.Count()
+                                  { 
+                                     
                                   };
-            FirstTB.Text = "from reg in _dataBase.Regions\r\n                                  join bo in _dataBase.BuildingObjects\r\n                                  on reg.RegionId equals bo.RegionId\r\n                                  select new\r\n                                  {\r\n                                      reg.RegionName,\r\n                                      count = bo.BuildingObjectName.Count()\r\n                                  }; ";
-        }
 
+            Dg.ItemsSource = firstSqlResults.ToList();*/
+        }
         private void SecondQuerryBTN_Click(object sender, RoutedEventArgs e)
         {
             var secondSqlResults = from reg in _dataBase.Regions
@@ -38,7 +37,7 @@ namespace KapustinRPMBDPR2
                                        bo.BuildingObjectName,
                                        bo.EnterYear
                                    };
-            SecondTB.Text = "from reg in _dataBase.Regions\r\n                                   join bo in _dataBase.BuildingObjects\r\n                                   on reg.RegionId equals bo.RegionId\r\n                                   join sec in _dataBase.Sectors\r\n                                   on bo.SectorId equals sec.SectorId\r\n                                   select new\r\n                                   {\r\n                                       reg.RegionName,\r\n                                       sec.SectorName,\r\n                                       bo.BuildingObjectName,\r\n                                       bo.EnterYear\r\n                                   };";
+            Dg.ItemsSource = secondSqlResults.ToList();
         }
     }
 }

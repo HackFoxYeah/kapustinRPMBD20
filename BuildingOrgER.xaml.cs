@@ -1,6 +1,7 @@
 ﻿using kapustinRPMBD;
 using System;
 using System.Windows;
+
 namespace KapustinRPMBDPR2
 {
     public partial class BuildingOrgER : Window
@@ -36,13 +37,25 @@ namespace KapustinRPMBDPR2
                 Close();
                 return;
             }
-            _objectBuildingOrgDB.OrganizationId = Math.Abs(orgId);
-            _objectBuildingOrgDB.OrganizationName = OrgNameTB.Text;
-            _objectBuildingOrgDB.Address = AddressTB.Text;
-            _objectBuildingOrgDB.PhoneNumber = PhoneNumberTB.Text;
-            MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");
-            _dataBase.SaveChanges();
-            Close();
+            try
+            {
+                _dataBase.BuildingOrganizations.Remove(_objectBuildingOrgDB);
+                _dataBase.SaveChanges();
+                _objectBuildingOrgDB.OrganizationId = Math.Abs(orgId);
+                _objectBuildingOrgDB.OrganizationName = OrgNameTB.Text;
+                _objectBuildingOrgDB.Address = AddressTB.Text;
+                _objectBuildingOrgDB.PhoneNumber = PhoneNumberTB.Text;
+                _dataBase.BuildingOrganizations.Add(_objectBuildingOrgDB);
+                MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");
+                _dataBase.SaveChanges();
+                Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Попытка удалить связанные записи! Сначала уберите зависимости!", "Конфликт связей");
+                _dataBase.BuildingOrganizations.Add(_objectBuildingOrgDB);
+                Close();
+            }            
         }
         private void CancelBTN_Click(object sender, RoutedEventArgs e)
         {

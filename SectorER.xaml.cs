@@ -10,7 +10,7 @@ namespace KapustinRPMBDPR2
             InitializeComponent();
         }
         Entities _dataBase = Entities.GetContext();
-        Sector _objectSectorId;
+        Sector _objectSectorId = new Sector();
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             _objectSectorId = _dataBase.Sectors.Find(DataBaseSupClass.SectorId);
@@ -30,11 +30,23 @@ namespace KapustinRPMBDPR2
                 Close();
                 return;
             }
-            _objectSectorId.SectorId = Math.Abs(sectorId);
-            _objectSectorId.SectorName = SectorNameTB.Text;
-            MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");
-            _dataBase.SaveChanges();
-            Close();
+            try
+            {
+                _dataBase.Sectors.Remove(_objectSectorId);
+                _dataBase.SaveChanges();
+                _objectSectorId.SectorId = Math.Abs(sectorId);
+                _objectSectorId.SectorName = SectorNameTB.Text;
+                _dataBase.Sectors.Add(_objectSectorId);
+                MessageBox.Show("Информация успешно сохранена.", "Добавление прошло успешно!");
+                _dataBase.SaveChanges();
+                Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Попытка удалить связанные записи! Сначала уберите зависимости!", "Конфликт связей");
+                _dataBase.Sectors.Add(_objectSectorId);
+                Close();
+            }
         }
         private void CancelBTN_Click(object sender, RoutedEventArgs e)
         {
